@@ -1,13 +1,12 @@
-import React from "react";
 import "./Footer.css";
 
-function Footer() {
+const Footer = () => {
   return (
-    <div className="footer__container">
-      <p className="footer__name">Developed By Monica Gonzalez</p>
+    <footer className="footer">
+      <p className="footer__name">Developed by Monica Gonzalez</p>
       <p className="footer__date">2023</p>
-    </div>
+    </footer>
   );
-}
+};
 
 export default Footer;

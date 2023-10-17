@@ -1,53 +1,87 @@
-.itemModal__wrapper {
+@font-face {
+  font-family: "Cabinet Grotesk";
+  src: url("../../../public/vendor/fonts/CabinetGrotesk-Regular.otf");
+}
+
+.modal {
   position: fixed;
   top: 0;
+  bottom: 0;
+  right: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.itemModal__container {
+.modal__content {
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  box-sizing: border-box;
+  max-width: 498px;
+  width: 100%;
   position: relative;
-  height: 610px;
-  width: 498px;
-  background-color: #fff;
-  border-radius: 16px;
 }
 
-.itemModal__closeButton {
-  background-image: url("../../images/closeButtonImage.png");
+.modal__image {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.modal__close {
+  background-image: url("../../images/close-button.svg");
+  background-repeat: no-repeat;
   background-position: center;
+  background-color: white;
+  height: 20px;
+  width: 20px;
+  border: none;
   position: absolute;
-  top: 27px;
-  right: 27px;
-  height: 14px;
-  width: 14px;
-  z-index: 4;
-}
-
-.itemModal__title {
-  position: absolute;
-  bottom: 75px;
-  left: 20px;
-  margin: 0px;
+  top: 10px;
+  right: 10px;
   z-index: 1;
-  height: 24px;
-  width: 36px;
-  font-weight: 700;
-  font-size: 20px;
-  color: #000;
-  z-index: 2;
 }
 
-.itemModal__image {
-  position: absolute;
-  top: 0px;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-  width: 498px;
+.modal__close:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.modal__info {
+  padding: 20px;
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  display: grid;
+  grid-template-areas:
+    "a b"
+    "c d";
+}
+
+.modal__title {
+  padding-bottom: 20px;
+}
+
+.modal__button-delete {
+  border: none;
+  background-color: #fff;
+  color: #ff4d00;
+  font-family: "Familjen Grotesk", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  height: 24px;
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 32px;
+  cursor: pointer;
+  display: grid;
+  justify-content: flex-end;
+  grid-area: b;
 }

@@ -1,22 +1,27 @@
-.weatherBackgroundImage {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-image: url("../../images/daySnow.jpg");
-  width: 1360px;
-  height: 80px;
-  border-radius: 12px;
+@font-face {
+  font-family: "Cabinet Grotesk";
+  src: url("../../../public/vendor/fonts/CabinetGrotesk-Regular.otf");
 }
 
-.weatherTemperature {
-  padding-left: 16px;
-  font-weight: 700;
+.weather {
+  position: relative;
+}
+
+.weather__info {
+  position: absolute;
+  top: 5px;
+  left: 16px;
+  color: white;
+  font-family: "Cabinet Grotesk", sans-serif;
   font-size: 36px;
-  color: #fff;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-top: 20px;
 }
 
-@media screen and (max-width: 650px) {
-  .weatherTemperature {
-    font-size: 24px;
-  }
+.weather__image {
+  width: 100%;
+  min-height: 80px;
 }

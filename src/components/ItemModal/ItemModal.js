@@ -1,24 +1,35 @@
-import React from "react";
 import "./ItemModal.css";
 
-function ItemModal({ card, onClose }) {
-  React.useEffect(() => {
-    document.addEventListener("keydown", onClose);
-
-    return () => {
-      document.removeEventListener("keydown", onClose);
-    };
-  }, [onClose]);
-
+const ItemModal = ({ selectedCard, onClose, handleDeleteCard }) => {
   return (
-    <div className="itemModal__wrapper" onClick={onClose}>
-      <div className="itemModal__container">
-        <div className="itemModal__closeButton" onClick={onClose}></div>
-        <h2 className="itemModal__title">{card.name}</h2>
-        <img className="itemModal__image" src={card.src} alt="article of clothing" />
+    <div className={`modal`}>
+      <div className="modal__content">
+        <button
+          className="modal__close"
+          type="button"
+          onClick={onClose}
+        ></button>
+        <img
+          className="modal__image"
+          src={selectedCard.link}
+          alt={selectedCard.name}
+        ></img>
+        <div className="modal__info">
+          <p className="modal__title">{selectedCard.name}</p>
+          <div className="modal__weather-type">
+            Weather Type: {selectedCard.weather}
+          </div>
+          <button
+            className="modal__button-delete"
+            type="button"
+            onClick={() => handleDeleteCard(selectedCard.id)}
+          >
+            Delete Item
+          </button>
+        </div>
       </div>
     </div>
   );
-}
+};
 
 export default ItemModal;

@@ -1,26 +1,35 @@
-.main__description-container {
-  display: flex;
+@font-face {
+  font-family: "Cabinet Grotesk";
+  src: url("../../../public/vendor/fonts/CabinetGrotesk-Regular.otf");
 }
 
-.main__description {
-  height: 25px;
-  width: 630px;
+.main {
+  padding-bottom: 150px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.card__section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card__items {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1360px;
+  width: 100%;
+  padding-top: 34px;
+}
+
+.weather__suggest {
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  color: #000;
-}
-
-.main__items {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-left: 0px;
-  width: 1360px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 323px);
-  justify-content: center;
-  column-gap: 17px;
-  row-gap: 20px;
-  padding-left: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  line-height: 25px;
+  padding-bottom: 40px;
 }
