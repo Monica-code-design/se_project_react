@@ -42,7 +42,7 @@ function App() {
         setClothingItems(data);
       })
       .catch((error) => {
-        console.error(error.status);
+        console.error(error);
       });
   }, []);
 
@@ -61,11 +61,11 @@ function App() {
     setCurrentTemperatureUnit(currentTemperatureUnit === "C" ? "F" : "C");
   };
 
-  const handleDeleteCard = (cardElement) => {
-    deleteItems(cardElement)
+  const handleDeleteCard = (_id) => {
+    deleteItems(_id)
       .then(() => {
         const newClothesList = clothingItems.filter((cards) => {
-          return cards.id !== cardElement;
+          return cards._id !== _id;
         });
         setClothingItems(newClothesList);
         handleCloseModal();

@@ -5,10 +5,14 @@
 
 .switch__box {
   border-radius: 25px;
-  border: 2px solid black;
+  border: 2px solid #7e7e7e;
   width: 56px;
   height: 28px;
   appearance: none;
+}
+
+.switch__box:hover {
+  border: 2px solid black;
 }
 
 .switch__slider {

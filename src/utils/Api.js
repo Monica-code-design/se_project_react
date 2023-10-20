@@ -1,5 +1,3 @@
-// const baseUrl =
-//   "https://my-json-server.typicode.com/mstarnes13/se_project_react";
 const baseUrl = "http://localhost:3001";
 
 export const checkResponse = (res) => {
@@ -40,6 +38,10 @@ export function deleteItems(id) {
     headers: {
       "Content-Type": "application/json",
     },
-  }).then(checkResponse);
+  })
+    .then(checkResponse)
+    .catch((error) => {
+      console.error("Error deleting item:", error);
+      throw error;
+    });
 }
-//

@@ -9,13 +9,11 @@ const AddItemModal = ({ handleCloseModal, handleAddItemSubmit, isOpen }) => {
 
   const [link, setUrl] = useState("");
   const handleUrlChange = (e) => {
-    console.log(e.target.value);
     setUrl(e.target.value);
   };
 
   const [weather, setWeatherType] = useState("");
   const handleWeatherType = (e) => {
-    console.log(e.target.value);
     setWeatherType(e.target.value);
   };
 
