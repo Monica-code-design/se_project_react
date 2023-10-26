@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Cabinet Grotesk";
-  src: url("../../../public/vendor/fonts/CabinetGrotesk-Regular.otf");
+  src: url("../../../public/vendor/fonts/CabinetGrotesk-Bold.woff2");
 }
 
 .card {
-  width: 310px;
+  width: auto;
   height: 310px;
   border-radius: 19px;
   position: relative;
@@ -12,8 +12,6 @@
   margin: 0;
   padding-left: 0;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
   border: 1px solid rgba(0, 0, 0, 0.3);
   cursor: pointer;

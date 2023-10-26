@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Cabinet Grotesk";
-  src: url("../../../public/vendor/fonts/CabinetGrotesk-Regular.otf");
+  src: url("../../../public/vendor/fonts/CabinetGrotesk-Medium.woff2");
 }
 
 .footer {
@@ -10,6 +10,8 @@
   padding: 40px;
   margin-top: 20px;
   margin-bottom: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .footer__name {

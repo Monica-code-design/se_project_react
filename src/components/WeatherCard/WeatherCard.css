@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Cabinet Grotesk";
-  src: url("../../../public/vendor/fonts/CabinetGrotesk-Regular.otf");
+  src: url("../../../public/vendor/fonts/CabinetGrotesk-Regular.woff2");
 }
 
 .weather {
@@ -9,16 +9,13 @@
 
 .weather__info {
   position: absolute;
-  top: 5px;
   left: 16px;
+  top: 29px;
   color: white;
   font-family: "Cabinet Grotesk", sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 25px;
-  letter-spacing: 0em;
-  text-align: left;
-  padding-top: 20px;
 }
 
 .weather__image {

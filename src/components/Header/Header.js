@@ -25,11 +25,15 @@ const Header = ({ onCreateModal, cityName }) => {
       <div className="header__avatar-logo">
         <ToggleSwitch />
         <div>
-          <button className="nav__button" type="text" onClick={onCreateModal}>
-            + Add New Clothes
+          <button
+            className="header__toggle-button"
+            type="text"
+            onClick={onCreateModal}
+          >
+            + Add clothes
           </button>
         </div>
-        <Link to="/profile" className="nav__name">
+        <Link to="/profile" className="header__profile-name">
           Monica Gonzalez
         </Link>
         <div>
