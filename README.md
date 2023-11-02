@@ -25,9 +25,13 @@ The WTWR Web Application offers several key features:
 The WTWR Web Application is built using the following technologies and libraries:
 
 **React:** A powerful JavaScript library for building user interfaces.
+
 **React Router:** Provides navigation and routing functionality for creating single-page applications.
+
 **OpenWeather API:** Used to fetch real-time weather data for various locations.
+
 **CSS:** Styling is implemented using Cascading Style Sheets for an aesthetically pleasing user interface.
+
 **Figma:** Figma was used for design prototyping, ensuring a visually appealing and user-friendly interface.
 
 GitHub Pages link; https://monica-code-design.github.io/se_project_react/
