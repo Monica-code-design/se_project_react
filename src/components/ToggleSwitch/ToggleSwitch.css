@@ -1,6 +1,7 @@
 .switch {
   display: flex;
   position: relative;
+  font-size: 14px;
 }
 
 .switch__box {
@@ -39,15 +40,15 @@
 .switch__temp-C {
   position: absolute;
   left: 40px;
-  top: -14px;
-  color: white;
+  top: -10px;
+  color: #7e7e7e;
 }
 
 .switch__temp-F {
   position: absolute;
-  top: -14px;
-  left: 14px;
-  color: white;
+  top: -10px;
+  left: 15px;
+  color: #7e7e7e;
 }
 
 .switch__active {

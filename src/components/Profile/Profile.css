@@ -1,5 +1,7 @@
 .profile {
   display: flex;
   flex-direction: row;
-  padding-top: 32px;
+  padding-top: 47px;
+  max-width: 1400px;
+  margin: 0 auto;
 }

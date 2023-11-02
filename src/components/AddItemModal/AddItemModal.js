@@ -25,7 +25,7 @@ const AddItemModal = ({ handleCloseModal, handleAddItemSubmit, isOpen }) => {
   return (
     <ModalWithForm
       buttonText="Add garment"
-      title="New Garment"
+      title="New garment"
       onClose={handleCloseModal}
       isOpen={isOpen}
       onSubmit={handleSubmit}
@@ -58,9 +58,11 @@ const AddItemModal = ({ handleCloseModal, handleAddItemSubmit, isOpen }) => {
         </label>
       </div>
       <div>
-        <p className="modal__label">Select the Weather Type</p>
+        <p className="modal__label modal__label-title">
+          Select the weather type:
+        </p>
         <div className="weather__selections">
-          <div>
+          <div className="weather__selections-options">
             {" "}
             <input
               className="form__input"
@@ -74,7 +76,7 @@ const AddItemModal = ({ handleCloseModal, handleAddItemSubmit, isOpen }) => {
               <span>Hot</span>
             </label>
           </div>
-          <div>
+          <div className="weather__selections-options">
             {" "}
             <input
               className="form__input"
@@ -86,7 +88,7 @@ const AddItemModal = ({ handleCloseModal, handleAddItemSubmit, isOpen }) => {
             />
             <label>Warm</label>
           </div>
-          <div>
+          <div className="weather__selections-options">
             {" "}
             <input
               className="form__input"

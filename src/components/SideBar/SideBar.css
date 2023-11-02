@@ -1,8 +1,12 @@
+@font-face {
+  font-family: "Cabinet Grotesk";
+  src: url("../../../public/vendor/fonts/CabinetGrotesk-Bold.woff");
+}
+
 .sidebar {
-  font-family: "Familjen Grotesk", sans-serif;
+  font-family: "Cabinet Grotesk", sans-serif;
   font-style: normal;
   display: flex;
-  margin: 0 0 0px 40px;
   justify-content: space-between;
   color: #000;
   font-size: 20px;
