@@ -1,6 +1,4 @@
-const baseUrl =
-  "https://my-json-server.typicode.com/monica-code-design/se_project_react";
-// const baseUrl = "http://localhost:3001";
+import { baseUrl } from "./constants";
 
 export const checkResponse = (res) => {
   if (res.ok) {
