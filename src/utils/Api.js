@@ -10,40 +10,43 @@ export const checkResponse = (res) => {
 };
 
 // GET Items
-export function getItems() {
-  return fetch(`${baseUrl}/items`, {
+export async function getItems() {
+  const res = await fetch(`${baseUrl}/items`, {
     headers: {
       "Content-Type": "application/json",
     },
-  }).then(checkResponse);
+  });
+  return checkResponse(res);
 }
 
 // POST Items
-export function postItems({ name, link, weather }) {
-  return fetch(`${baseUrl}/items`, {
+export async function postItems({ name, imageUrl, weather }) {
+  const res = await fetch(`${baseUrl}/items`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
       name,
-      link,
+      imageUrl,
       weather,
     }),
-  }).then(checkResponse);
+  });
+  return checkResponse(res);
 }
 
 // DELETE Items
-export function deleteItems(id) {
-  return fetch(`${baseUrl}/items/${id}`, {
-    method: "DELETE",
-    headers: {
-      "Content-Type": "application/json",
-    },
-  })
-    .then(checkResponse)
-    .catch((error) => {
-      console.error("Error deleting item:", error);
-      throw error;
+export async function deleteItems(_id) {
+  try {
+    const res = await fetch(`${baseUrl}/items/${_id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
     });
+    return checkResponse(res);
+  } catch (error) {
+    console.error("Error deleting item:", error);
+    throw error;
+  }
 }
