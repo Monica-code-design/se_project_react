@@ -18,7 +18,7 @@ export const latitude = 41.8781;
 export const longitude = -87.6298;
 export const APIkey = "6af2c7dd60146cb467c54ef336532967";
 
-export const username = "Monica Gonzalez";
+export const userName = "Monica Gonzalez";
 
 export const baseUrl = "http://localhost:3001";
 
