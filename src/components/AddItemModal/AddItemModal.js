@@ -72,7 +72,7 @@ const AddItemModal = ({ handleCloseModal, handleAddItemSubmit, isOpen }) => {
               name="weather"
               onChange={handleWeatherType}
             />
-            <label>
+            <label htmlFor="hot">
               <span>Hot</span>
             </label>
           </div>
