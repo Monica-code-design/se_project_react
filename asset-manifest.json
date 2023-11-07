@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/se_project_react/static/css/main.b2211c3a.css",
-    "main.js": "/se_project_react/static/js/main.85234aee.js",
+    "main.js": "/se_project_react/static/js/main.d6dc45f8.js",
     "static/js/787.aec36e2a.chunk.js": "/se_project_react/static/js/787.aec36e2a.chunk.js",
     "static/media/Avatar.svg": "/se_project_react/static/media/Avatar.7b2e481e5743948ddad1ae499348deb8.svg",
     "static/media/CabinetGrotesk-Bold.woff": "/se_project_react/static/media/CabinetGrotesk-Bold.0fb1cbec860aa3537c32.woff",
@@ -20,11 +20,11 @@
     "static/media/sunny.svg": "/se_project_react/static/media/sunny.72b97c989abef3fa31d5e3a679335be4.svg",
     "static/media/close-button.svg": "/se_project_react/static/media/close-button.b71681280ab7343b09ac.svg",
     "main.b2211c3a.css.map": "/se_project_react/static/css/main.b2211c3a.css.map",
-    "main.85234aee.js.map": "/se_project_react/static/js/main.85234aee.js.map",
+    "main.d6dc45f8.js.map": "/se_project_react/static/js/main.d6dc45f8.js.map",
     "787.aec36e2a.chunk.js.map": "/se_project_react/static/js/787.aec36e2a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b2211c3a.css",
-    "static/js/main.85234aee.js"
+    "static/js/main.d6dc45f8.js"
   ]
 }
