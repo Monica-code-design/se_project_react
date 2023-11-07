@@ -63,6 +63,10 @@
   margin: 0 0 12px 0;
 }
 
+.weather__selections {
+  margin-bottom: 32px;
+}
+
 .weather__selections-options {
   margin-bottom: 8px;
 }
@@ -78,7 +82,7 @@
 .modal__children {
   width: 100%;
   font-size: 16px;
-  margin: 24px 0 32px 0;
+  margin: 24px 0 0 0;
 }
 
 .modal__form-button {
