@@ -36,7 +36,12 @@ function Main({ weatherTemp, onSelectCard, clothingItems }) {
 
   return (
     <main className="main">
-      <WeatherCard day={true} type="cloudy" weatherTemp={temp} />
+      <WeatherCard
+        day={true}
+        type="sunny"
+        weatherTemp={temp}
+        temperatureUnit={currentTemperatureUnit}
+      />
       <section className="card__section" id="card-section">
         <div className="weather__suggest">
           Today is {temp}°{currentTemperatureUnit} / You may want to wear:{" "}
