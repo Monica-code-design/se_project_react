@@ -20,7 +20,7 @@ export const APIkey = "6af2c7dd60146cb467c54ef336532967";
 
 export const userName = "Monica Gonzalez";
 
-export const baseUrl = "http://localhost:3001";
+export const baseUrl = "https://monica-code-design.github.io/se_project_react";
 
 export const weatherOptions = [
   {
