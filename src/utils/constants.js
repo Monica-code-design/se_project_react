@@ -18,7 +18,7 @@ export const latitude = 41.8781;
 export const longitude = -87.6298;
 export const APIkey = "6af2c7dd60146cb467c54ef336532967";
 
-export const userName = "Monica Gonzalez";
+export const userName = "Monica Reynaga";
 
 export const baseUrl = "https://monica-code-design.github.io/se_project_react";
 

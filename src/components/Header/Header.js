@@ -34,7 +34,7 @@ const Header = ({ onCreateModal, cityName }) => {
           </button>
         </div>
         <Link to="/profile" className="header__profile-name">
-          Monica Gonzalez
+          Monica Reynaga
         </Link>
         <div>
           <img src={avatar} alt="Avatar" />
